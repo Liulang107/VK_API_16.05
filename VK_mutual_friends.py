@@ -1,12 +1,10 @@
 import requests
 import time
 
-
 TOKEN = 'af146ade9a53acc70d6e60cde6cf3ad6ec97744463455e9e3ab5576a0b17f9bd9d768cf21a6941e89faec'
 params = {'access_token': TOKEN,
           'v': '5.95'
           }
-
 
 # Задача 1. Пользователя нужно описать с помощью класса и реализовать метод поиска общих друзей, используя API VK
 
@@ -79,7 +77,6 @@ def main():
                 print(user.full_name)
                 time.sleep(1)
 
-
 main()
 
 
@@ -111,7 +108,6 @@ def main_v1():
                 time.sleep(1)
             print(mutual_friend_list)
 
-
 main_v1()
 
 
@@ -133,6 +129,5 @@ def main_v2():
             user = User_more_extended(user_info[0]['id'], user_info[0]['first_name'], user_info[0]['last_name'])
             print(user.full_name, end=' ')
             print(user)
-
 
 main_v2()
